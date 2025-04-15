@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Career Catalog</title>
+	<!-- Outfit Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+	<link href="styles/styles.css" rel="stylesheet">
+	
+<!-- Cormorant Garamond Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+	
+<!-- EB Garamond Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	 <header class="headerContainer">
+		<section data-translate="archiveYears" class="archiveYears">2023 - 2025 ARCHIVE</section>
+		<nav class="nav-container">
+			<!-- Hamburger Button -->
+        		<button class="menu-toggle" aria-label="Open menu">
+           			 ☰
+        		</button>
+			
+			<ul class="flex-nav">
+				<li><a href="index.html" data-translate="mainHall">MAIN HALL</a></li>
+				<li><a href="Work.html" data-translate="showroom">THE SHOWROOM</a></li>
+				<li><a href="Resume.html" class="active" data-translate="careerCatalog">CAREER CATALOG</a></li>
+				<li><a href="Contact.html" data-translate="inquiryDesk" >INQUIRY DESK</a></li>
+			</ul>
+			
+			<section class="language-switcher">
+				<img src="images/usa.png" alt="English" id="englishBtn" class="lang-btn" data-lang="en">
+				<img src="images/mexico.webp" alt="Español" id="spanishBtn" class="lang-btn" data-lang="es">
+			</section>
+		</nav>
+	</header>
+	
+	<section class="container">
+		<section class="resume">
+        <section class="personalInfo">
+            <h1 id="name">Angelita Lupercio</h1>
+            <p id="contact" data-translate="careerPreview">Email: luperci4@msu.edu | Phone: (123)456-78-90</p>
+        </section>
+
+        <section class="experience">
+			<h2 data-translate="workExperience">Work Experience</h2>
+			
+			<section class="job">
+                <h3 class="jobTitle" data-translate="playLeader">Play Leader</h3>
+                <p class="jobCompany">City of Detroit | Roberto Clemente Recreation Center</p>
+                <p class="jobDate" data-translate="summer2024">Summer (June-August) 2024</p>
+                <ul class="job-details">
+                    <li data-translate="leader1">Worked at summer day camp as Play Leader for girls & boys, ages 6-8</li>
+                    <li data-translate="supervised">Supervised kids on weekly field trips and daily activities; ensuring safety</li>
+                    <li>Organized daily activites (Gym Games, Arts & Crafts, and Yoga)</li>
+                </ul>
+            </section>
+			
+			<section class="job">
+                <h3 class="jobTitle" data-translate="virtualJob">Virtual Job Shadowing</h3>
+                <p class="jobCompany">Urban Neighborhood Initiatives | Grow Detroit's Youth Talent</p>
+                <p class="jobDate" data-translate="summer2020">Summer 2020 - 2021</p>
+                <ul class="job-details">
+                    <li data-translate="careerExplore">Engaged in online career exploration</li>
+                    <li data-translate="interest">Completed weekly assignments pertaining to different professions of interest</li>
+                    <li data-translate="">Participated in weekly meetings to discuss Social Emotional Learning</li>
+                </ul>
+            </section>
+			
+            <section class="job">
+                <h3 class="jobTitle" data-translate="youthWorker">Youth Worker</h3>
+                <p class="jobCompany">Grow Detroit's Young Talent | Roberto Clemente Recreation Center</p>
+                <p class="jobDate" data-translate="summer2019">Summer (July-August) 2019</p>
+                <ul class="job-details">
+                    <li data-translate="leaderAssistant">Worked at summer day camp as Play Leader assistant for girls, ages 6-8</li>
+                    <li data-translate="supervised">Supervised kids on weekly field trips and daily activities; ensuring safety</li>
+                    <li>Organized daily activites (Gym Games, Arts & Crafts, and Yoga)</li>
+                </ul>
+            </section>
+        </section>
+			
+		<section class="education">
+            <h2>Education</h2>
+
+            <div class="edu">
+                <h3 class="edu-title">Bachelor's Degree in Creative Advertising</h3>
+                <p class="edu-school">Michigan State University</p>
+                <p class="edu-date">2021 - 2025</p>
+				<ul class="education-details">
+                <li class="edu-details">Focus in Art Direction</li>
+				<li class="edu-details">Dean's List 2023-2025</li>
+				</ul>
+            </div>
+        </section>
+			
+		<!-- New Community Service Section -->
+        <section class="community-service">
+            <h2>Community Service</h2>
+
+            <div class="service">
+                <h3 class="service-title">Volunteer</h3>
+                <p class="service-org">Roberto Clemente Recreation Center | Teen Council</p>
+                <p class="service-date">2016 - 2020</p>
+                <ul class="service-details">
+                    <li>Assisted with holiday events including serving food, event set-ups, and monitoring activities (Arts & Crafts, Easter egg hunts, and Gym Games)</li>
+                    <li>Participated in fundraisers such as, car washes and concession stands (conducted sells and prepped hot meals)</li>
+                    <li>Motor City Makeover volunteer (Helped clean the outside environment to ensure a safe and clean space</li>
+                </ul>
+			</div>
+        </section>
+
+
+        <section class="skills">
+            <h2 id="skillsTitle">Skills & Expertise</h2>
+            <ul class="skills-list">
+                <li>Bilingual (English & Spanish)</li>
+                <li>Typography & Layout</li>
+                <li>Adobe Creative Suite</li>
+                <li>UI/UX Design</li>
+                <li>Creative Direction</li>
+            </ul>
+        </section>
+
+        <section class="resume-download">
+            <a href="../Work/Angelita Lupercio.pdf" class="download-btn" target="_blank">Download Resume (PDF)</a>
+        </section>
+    </section>
+	</section>
+	
+	<footer>
+		<section class="footerContainer">
+			<section class="logoContainer">
+			<h1 data-translate="logo" class="logo">THE PORTFOLIO.</h1>
+			</section>
+			
+			<section class="navContainer">
+				<p class="footerTitles" data-translate="explore">Explore</p>
+				<nav>
+				<ul class="footerNav">
+					<li><a href="index.html" data-translate="Mainhall" >Main Hall</a></li>
+					<li><a href="Work.html" data-translate="showRoom" >The Showroom</a></li>
+					<li><a href="Resume.html" data-translate="Careercatalog" >Career Catalog</a></li>
+					<li><a href="Contact.html" data-translate="Inquirydesk" >Inquiry Desk</a></li>
+				</ul>
+			</nav>
+			</section>
+			
+			<section class="socialsContainer">
+				<p class="footerTitles" data-translate="education">Education</p>
+				<p class="footerInfo2">Michigan State University</p>
+				<p class="footerTitles" data-translate="skills">Skills</p>
+				<p class="footerInfo">Adobe Illustrator</p>
+				<p class="footerInfo">Adobe Photoshop</p>
+				<p class="footerInfo">Adobe InDesign</p>
+				<p class="footerInfo">Adobe DreamWeaver</p>
+			</section>
+			
+			<section class="socialsContainer">
+				<p class="footerTitles" data-translate="connect">Connect with Me</p>
+				<nav>
+				<ul class="footerNav">
+					<li><a href="https://msu.joinhandshake.com/profiles/7pwasw" target="_blank">Handshake</a></li>
+					<li><a href="Work.html">LinkedIn</a></li>
+				</ul>
+			</nav>
+			</section>
+			
+			<section class="footerPersonal">
+				<p class="footerTitles" data-translate="email">Email</p>
+				<p class="footerInfo2">luperci4@msu.edu</p>
+				<p class="footerTitles" data-translate="located">Location</p>
+				<p class="footerInfo">Detroit, MI</p>
+			</section>
+		</section>
+		
+		<section class="copyrightContainer">
+			<section class="language-switcher">
+				<img src="images/usa.png" alt="English" id="english-Btn" class="lang-btn" data-lang="en">
+				<img src="images/mexico.webp" alt="Español" id="spanish-Btn" class="lang-btn" data-lang="es">
+			</section>
+			<h2 data-translate="copyright" class="copyright">© 2025 Angelita Lupercio. All Rights Reserved.</h2>
+		</section>
+	</footer>
+	
+	<script src="spanish.js"></script>
+</body>
+</html>

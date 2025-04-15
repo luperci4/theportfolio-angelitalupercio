@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Showroom</title>
+<!-- Outfit Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+	<link href="styles/styles.css" rel="stylesheet">
+	
+<!-- Cormorant Garamond Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+	
+<!-- EB Garamond Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<header class="headerContainer">
+		<section data-translate="archiveYears" class="archiveYears">2023 - 2025 ARCHIVE</section>
+		<nav class="nav-container">
+			<!-- Hamburger Button -->
+        		<button class="menu-toggle" aria-label="Open menu">
+           			 ☰
+        		</button>
+			
+			<ul class="flex-nav">
+				<li><a href="index.html" data-translate="mainHall" >MAIN HALL</a></li>
+				<li><a href="Work.html" data-translate="showroom" class="active">THE SHOWROOM</a></li>
+				<li><a href="Resume.html" data-translate="careerCatalog">CAREER CATALOG</a></li>
+				<li><a href="Contact.html" data-translate="inquiryDesk" >INQUIRY DESK</a></li>
+			</ul>
+			
+			<section class="language-switcher">
+				<img src="images/usa.png" alt="English" id="englishBtn" class="lang-btn" data-lang="en">
+				<img src="images/mexico.webp" alt="Español" id="spanishBtn" class="lang-btn" data-lang="es">
+			</section>
+		</nav>
+	</header>
+	
+	<section class="container">
+		<section class="gallery">
+		<h1 data-translate="masterpieces" class="pageHeader">MASTERPIECES ON VIEW</h1>
+		<h2 class="pageSubtitle" data-translate="fullDescription">This Collection Includes Curated Work from All Categories Including but Not Limited to Event Posters to Digital/Print Designs</h2>
+		
+		<nav class="filter-container">
+			<p data-translate="filters">Filters:</p>
+				<ul class="flex-navFilters">
+					<li><a href="Work.html" data-translate="fullCollection" class="activeFilter">FULL COLLECTION</a></li>
+					<li><a href="EventPosters.html" data-translate="promotional" >PROMOTONAL</a></li>
+					<li><a href="Infographics.html" data-translate="infographics" >INFOGRAPHICS</a></li>
+					<li><a href="Logos.html" data-translate="branding">BRANDING</a></li>
+					<li><a href="Digital.html" data-translate="digitalPrint" >DIGITAL/PRINT</a></li>
+				</ul>
+		</nav>
+		
+		<section class="photo-gallery">
+			<section class="column">
+				<button id="open" class="image-button">
+					<img src="images/The Portfolio2.jpg" alt="book cover" class="button-image">
+				</button>
+				
+				<section class="modal-container" id="modal_container2">
+				  <section class="modal">
+						<button id="close" class="close">
+							Exit
+						</button>
+						
+						<section class="overview">
+							<section class="image-container2">
+								<img class="modal-image" src="images/The Portfolio2.jpg" alt="detrit tigers">
+							</section>
+						</section>
+				  </section>
+				</section>
+				
+			<!-- in too deep modal -->
+				<button id="open1" class="image-button">
+					<img src="images/Book Cover.jpg" alt="book cover" class="button-image">
+				</button>
+				
+				<section class="modal-container" id="modal_container1">
+				  <section class="modal">
+						<button id="close1" class="close">
+							Exit
+						</button>
+						
+						<section class="overview">
+							<section class="image-container">
+								<img class="modal-image" src="images/Book Cover.jpg" alt="detrit tigers">
+							</section>
+						</section>
+				  </section>
+				</section>
+				
+				<section class="photo">
+					<img src="images/Phraseology logo.jpg" alt="Phraseology logo design">
+				</section>
+				
+				<section class="photo">
+					<img src="images/songs tab chart.jpg" alt="Rick's top 100 songs tab chart">
+				</section>
+				
+				<button id="abrir" class="image-button">
+					<img src="images/swanlake3.0.jpg" alt="book cover" class="button-image">
+				</button>
+				
+				<section class="modal-container" id="modal_container1">
+				  <section class="modal">
+						<button id="cerrar" class="close">
+							Exit
+						</button>
+						
+						<section class="overview">
+							<section class="image-container">
+								<img class="modal-image" src="images/swanlake3.0.jpg" alt="detroit tigers">
+							</section>
+						</section>
+				  </section>
+				</section>
+			</section>
+			
+			<section class="column">
+				<section class="photo">
+					<img src="images/ignite logo.jpg" alt="Ignite agency logo design">
+				</section>
+				
+				<section class="photo">
+					<img src="images/elections frontpage.jpg" alt="2024 elections frontpage">
+				</section>
+				
+				<section class="photo">
+					<a href="aboutangelita.html" class="imageButton">
+					<img src="images/Angelita copy.jpg" alt="Angelita movie poster design">
+					</a>
+				</section>
+				
+				<section class="photo">
+					<a href="aboutpizza.html" class="imageButton">
+					<img src="images/menu design.jpg" alt="La dolce pizza menu">
+					</a>
+				</section>
+				
+				<section class="photo">
+					<a href="aboutgraduate.html" class="imageButton">
+					<img src="images/Graduation invite.jpg" alt="2024 graduation invitation">
+					</a>
+				</section>
+			</section>
+			
+			<section class="column">
+				<section class="photo">
+					<a href="abouttigers.html" class="imageButton">
+					<img src="images/Detroit tigers.jpg" alt="Detroit tiger poster design">
+					</a>
+					</section>
+				
+				<button id="open2" class="image-button">
+					<img src="images/looks that kill Final.jpg" alt="book cover" class="button-image">
+				</button>
+				
+				<section class="modal-container" id="modal_container3">
+				  <section class="modal">
+						<button id="close2" class="close">
+							Exit
+						</button>
+						
+						<section class="overview">
+							<section class="image-container2">
+								<img class="modal-image" src="images/looks that kill Final.jpg" alt="detrit tigers">
+							</section>
+						</section>
+				  </section>
+				</section>
+				
+				<section class="photo">
+					<img src="images/GOODBITE.jpg" alt="Goodbite logo design">
+					</section>
+				
+				<section class="photo">
+					<img src="images/Barbie chart.jpg" alt="Barbie doll timeline">
+					</section>
+			</section>
+			
+			<section class="column">
+				<section class="photo">
+					<img src="images/Football chart.jpg" alt="March madness bracket">
+					</section>
+				
+				<section class="photo">
+					<img src="images/March Madness.jpg" alt="March madness bracket">
+					</section>
+				
+				<section class="photo">
+					<img src="images/New York Times.jpg" alt="New york times bar chart">
+					</section>
+				
+				<section class="photo">
+					<a href="aboutmsu.html" class="imageButton">
+					<img src="images/Pie Chart.jpg" alt="MSU students pie chart">
+					</a>
+					</section>
+				
+				<section class="photo">
+					<a href="aboutvote.html" class="imageButton">
+					<img src="images/elections graphics.jpg" alt="2024 elections charts">
+					</a>
+				</section>
+			</section>
+		</section>
+		</section>
+	</section>
+	
+	<footer>
+		<section class="footerContainer">
+			<section class="logoContainer">
+			<h1 data-translate="logo" class="logo">THE PORTFOLIO.</h1>
+			</section>
+			
+			<section class="navContainer">
+				<p class="footerTitles" data-translate="explore">Explore</p>
+				<nav>
+				<ul class="footerNav">
+					<li><a href="index.html" data-translate="Mainhall" >Main Hall</a></li>
+					<li><a href="Work.html" data-translate="showRoom" >The Showroom</a></li>
+					<li><a href="Resume.html" data-translate="Careercatalog" >Career Catalog</a></li>
+					<li><a href="Contact.html" data-translate="Inquirydesk" >Inquiry Desk</a></li>
+				</ul>
+			</nav>
+			</section>
+			
+			<section class="socialsContainer">
+				<p class="footerTitles" data-translate="education">Education</p>
+				<p class="footerInfo2">Michigan State University</p>
+				<p class="footerTitles" data-translate="skills">Skills</p>
+				<p class="footerInfo">Adobe Illustrator</p>
+				<p class="footerInfo">Adobe Photoshop</p>
+				<p class="footerInfo">Adobe InDesign</p>
+				<p class="footerInfo">Adobe DreamWeaver</p>
+			</section>
+			
+			<section class="socialsContainer">
+				<p class="footerTitles" data-translate="connect">Connect with Me</p>
+				<nav>
+				<ul class="footerNav">
+					<li><a href="https://msu.joinhandshake.com/profiles/7pwasw" target="_blank">Handshake</a></li>
+					<li><a href="Work.html">LinkedIn</a></li>
+				</ul>
+			</nav>
+			</section>
+			
+			<section class="footerPersonal">
+				<p class="footerTitles" data-translate="email">Email</p>
+				<p class="footerInfo2">luperci4@msu.edu</p>
+				<p class="footerTitles" data-translate="located">Location</p>
+				<p class="footerInfo">Detroit, MI</p>
+			</section>
+		</section>
+		
+		<section class="copyrightContainer">
+			<section class="language-switcher">
+				<img src="images/usa.png" alt="English" id="english-Btn" class="lang-btn" data-lang="en">
+				<img src="images/mexico.webp" alt="Español" id="spanish-Btn" class="lang-btn" data-lang="es">
+			</section>
+			<h2 data-translate="copyright" class="copyright">© 2025 Angelita Lupercio. All Rights Reserved.</h2>
+		</section>
+	</footer>
+	
+	<script src="spanish.js">
+	</script>
+</body>
+</html>
