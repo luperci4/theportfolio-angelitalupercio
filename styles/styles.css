@@ -1,0 +1,1223 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* general styles */
+body {
+	background-color: #f6f4f0;
+	/*max-width: 1440px;*/
+	margin: 0;
+	cursor: default;
+}
+
+h1 {
+	font-family: "Oooh Baby";
+	color: #213f9a;
+	margin: 0;
+}
+
+h2 {
+	font-family: "Special Gothic Expanded One";
+	font-weight: bold;
+	color: #213f9a;
+	margin: 0;
+}
+
+p {
+	font-family: Poppins;
+	margin: 0;
+}
+
+/* header styles */
+.header-container {
+	border: 1px solid transparent;
+	margin: 0em 0em;
+	position: sticky; /* makes the header stay while scrollling */
+	top: 0;
+	z-index: 1000; /* makes sure header is the top layer */
+	background-color: #f6f4f0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo-container {
+	border: 1px solid transparent;
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	margin-left: 2em;
+}
+
+.logo-link {
+ 	display: flex;
+  	column-gap: 10px;
+  	text-decoration: none;
+  	color: inherit; /* keeps the same text color */
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-link:hover {
+  	transform: scale(1.05); /* zoom in */
+  	filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)); /* soft shadow */
+  	cursor: pointer;
+}
+
+.nav-container {
+	border: 1px solid transparent;
+	align-items: center;
+	display: flex;
+}
+
+/* Hide menu toggle button on large screens */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.flex-nav {
+	display: flex;
+	list-style: none;
+	gap: 2em;
+}
+
+.flex-nav a {
+	position: relative;
+	text-decoration: none;
+	font-family: Poppins;
+	font-size: 1.08em;
+	font-weight: 300;
+	color: #222222;
+	padding-bottom: 3px; /* adds space for the line */
+}
+
+.flex-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1.5px;
+  width: 0;
+  background-color: #213f9a; /* your accent color */
+  transition: width 0.3s ease-in-out;
+}
+
+.flex-nav a:hover::after {
+  width: 100%;
+}
+
+.flex-nav a.active {
+	font-family: "Oooh Baby";
+	font-weight: bolder;
+	color: #213f9a;
+	font-size: 1.4em;
+}
+
+
+.language-switcher {
+	display: flex;
+	gap: 10px;
+	border: 1px solid transparent;
+	align-items: center;
+	margin-left: 1em;
+	margin-right: 2em;
+}
+
+.lang-btn {
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: transform 0.2s ease-in-out;
+	border: 2px solid transparent;
+  	padding: 2px; /* so the image stays inside the circle */
+}
+
+/*.lang-btn:hover {
+  	border: 2px solid #213f9a;
+  	padding: 2px; /* so the image stays inside the circle 
+}*/
+
+/*.active-lang {
+	border: 2px solid #213f9a;
+ 	padding: 2px; /* so the image stays inside the circle
+}*/
+
+/* intro section styles */
+.intro-section {
+	border: 1px solid transparent;
+	height: 650px;
+	align-content: center;
+	justify-content: space-between;
+	padding: 3em;
+}
+
+.title-container {
+	border: 1px solid transparent;
+	display: flex;
+	column-gap: 2.5em;
+	width: auto;
+	margin-top: 14.4em
+}
+
+
+.intro-title {
+	font-size: 6em;
+	margin: 0;
+}
+
+.sub-container {
+	border: 1px solid transparent;
+	display: flex;
+	column-gap: 10px;
+	align-items: center;
+	padding: 0;
+	margin: -0.7em 0 15em 0;
+	
+}
+
+#subheadline {
+	font-family: Poppins;
+	font-size: 1.3em;
+	font-weight: 200;
+	margin: 0;
+}
+
+#name{
+	font-family: "Oooh Baby";
+	color: #213f9a;
+	font-size: 1.8em;
+	margin: 0;
+}
+
+.details {
+	border: 1px solid transparent;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.intro-detail {
+	font-weight: 600;
+	color: #213f9a;
+}
+
+/* about section styles */
+.about-section {
+	/*border: 1px solid transparent;*/
+	position: relative;
+	background-image: url("../images/portfolio background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	height: 650px;
+	padding: 3em;
+}
+
+#center-container {
+	border: 1px solid transparent;
+	margin: auto;
+	width: 70em;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+.section-title {
+	border: 1px solid transparent;
+	padding: 0;
+}
+
+.written-title {
+	font-size: 4em;
+	margin: 0;
+	color: #f6f4f0;
+}
+
+.bold-title {
+	font-size: 4em;
+	margin: -0.25em 0 0 0.7em;
+	color: #f6f4f0;
+}
+
+.introduction {
+	border: 1px solid transparent;
+	padding: 0em;
+	display: flex;
+	width: auto;
+	flex-direction: column;
+	/*align-items: center;*/
+}
+
+.name-container {
+	border: 1px solid transparent;
+	display: flex;
+	column-gap: 10px;
+	align-items: center;
+	/*width: auto;*/
+}
+
+.education-container {
+	border: 1px solid transparent;
+	display: flex;
+	column-gap: 10px;
+	/*width: fit-content;*/
+	/*padding-left: 4em;*/
+	margin: 0.5em 0;
+}
+
+.bio-container {
+	border: 1px solid transparent;
+	display: flex;
+	column-gap: 10px;
+}
+
+.intro-title-container {
+	border: 1px solid transparent;
+	width: 10em;
+	margin-left: 21em
+}
+
+#name-title, #edu-title, #bio-title {
+	font-size: 1em;
+	margin: 0;
+	text-align: right;
+	color: #f6f4f0;
+}
+
+.name {
+	font-size: 1.5em;
+	margin: 0em;
+	color: #f6f4f0;
+}
+
+#school {
+	font-size: 1em;
+	font-weight: 300;
+	margin: 0;
+	color: #f6f4f0;
+}
+
+#major {
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: 600;
+	margin: 0;
+	color: #f6f4f0;
+}
+
+#bio-story {
+	font-size: 0.9em;
+	font-weight: 300;
+	max-width: 42em;
+	margin: 0em;
+	color: #f6f4f0;
+}
+
+/* work section styles */
+.works-section {
+	border: 1px solid transparent;
+	display: flex;
+	flex-direction: column;
+	height: 650px;
+	padding: 3em 5em;
+}
+
+#work-title {
+	border: 1px solid transparent;
+	display: flex;
+	column-gap: 2.5em;
+	height: fit-content; 
+	width: fit-content;
+}
+
+.work {
+	font-size: 4em;
+	margin: 0;
+}
+
+.grid-container {
+	border: 1px solid transparent;
+	justify-content: center;
+	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5em;
+	padding: 16px;
+	margin: 1em auto;
+	width: fit-content;
+}
+
+.gridItem {
+	/*justify-content: center;
+	align-items: center;*/
+	object-fit: contain;
+	/*overflow: hidden;*/
+	display: flex;
+	flex-direction: column;
+	border: 1px solid transparent;
+	padding: 10px;
+	width: fit-content;
+	height: fit-content;
+}
+
+.gridItem img {
+	max-height: 30em;
+	width: auto;
+	object-fit: contain;
+}
+
+.image-button {
+  background: none;/* Remove default button background */
+  border: none;/* Remove default button border */
+  padding: 0;/* Remove default padding */
+  cursor: default;/* Make the button behave like a clickable element */
+	display: inline-block;
+	 margin-bottom: 20px;
+}
+
+.image-button.hidden {
+  display: none;
+}
+
+.button-image {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 0.3em 0.3em 0.8em rgba(0, 0, 0, 0.25);
+	transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+	box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+	will-change: transform;
+}
+
+/*.button-image:hover {
+	transform: scale(1.04); 
+	box-shadow: 0.5em 0.5em 1.2em rgba(0, 0, 0, 0.35);
+}*/
+
+.project-info {
+	border: 1px solid transparent;
+	display: flex;
+	column-gap: 1em;
+	margin-top: 0.5em;
+	align-items: center;
+}
+
+.project-info-details {
+	border: 1px solid transparent;
+	display: flex;
+	flex-direction: column;
+	gap: 0.4em;
+}
+
+.number {
+	font-size: 2.3em
+}
+
+/*.view-more {
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	column-gap: 2em;
+}*/
+
+.project-name {
+	font-size: 0.9em;
+	/*margin: 0.3em 0;*/
+}
+
+
+/*.project-info a {
+	position: relative;
+	text-decoration: none;
+	font-family: Poppins;
+	font-size: 0.7em;
+	font-weight: 400;
+	color: #213f9a;
+	padding-bottom: 3px; 
+	cursor: pointer;
+}
+
+.project-info a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1.5px;
+  width: 0;
+  background-color: #213f9a; 
+  transition: width 0.3s ease-in-out;
+}
+
+.project-info a:hover::after {
+  width: 100%;
+}*/
+
+.category {
+	border: 1px solid #213f9a;
+	color: #213f9a;
+	font-size: 0.7em;
+	text-align: center;
+	width: fit-content;
+	padding: 0.4em 0.8em;
+	border-radius: 2em;
+}
+
+/* compositions page styles */
+.compositions-section {
+	border: 1px solid transparent;
+	padding: 2em 6em;
+	height: fit-content;
+	margin-bottom: 3em;
+}
+
+.compositions-title-container {
+	border: 1px solid transparent;
+	display: flex;
+	column-gap: 1.5em
+}
+
+.compositions-title {
+	font-size: 3em;
+}
+
+.compositions-sub-container {
+	border: 1px solid transparent;
+	width: 80%;
+	margin: 0.3em 0;
+}
+
+.compositions-subtitle {
+	font-size: 0.9em;
+	font-weight: 300;
+}
+
+.nav-filter-container {
+	border: 1px solid transparent;
+	margin: 1em 0em;
+}
+
+.filters {
+	display: flex;
+	align-items: center;
+}
+
+.filter-title {
+	font-size: 1.5em;
+}
+
+.composition-filters {
+	list-style: none;
+	display: flex;
+	gap: 1.7em;
+	padding-left: 0.5em;
+}
+
+.composition-filters a {
+	position: relative;
+	text-decoration: none;
+	color: #213f9a;
+	font-family: "Special Gothic Expanded One";
+	font-size: 0.8em;
+	padding-bottom: 0.3em;
+}
+
+.composition-filters a.active-filter {
+	background-color: #213f9a;
+	color: #f6f4f0;
+	padding: 0.5em 1.5em;
+	border-radius: 2em;
+}
+
+.composition-filters a:not(.active-filter)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1.5px;
+  width: 0;
+  background-color: #213f9a; /* your accent color */
+  transition: width 0.3s ease-in-out;
+}
+
+.composition-filters a:not(.active-filter):hover::after {
+  width: 100%;
+}
+
+.composition-gallery {
+	border: 1px solid transparent;
+	/*display: flex;
+	gap: 20px;*/
+	column-count: 4;
+	column-gap: 20px;
+	width: 100%;
+}
+
+/* timeline page styles */
+.timeline-section {
+	border: 1px solid transparent;
+	padding: 2em 9em 5em;
+	height: fit-content;
+}
+
+.timeline-backround {
+	background-color: #213f9a;
+	border-radius: 20px;
+	padding: 1.5em 3em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.personal-info {
+	text-align: center;
+	margin-bottom: 3em
+}
+
+#timeline-name {
+	color: #f6f4f0;
+	font-size: 2em;
+}
+
+.contact-info {
+	color: #f6f4f0;
+	font-size: 0.9em;
+	font-weight: 300;
+	margin: 0.5em;
+}
+
+.contact-info a {
+	text-decoration: none;
+	position: relative;
+	color: #f6f4f0; 
+	padding-bottom: 3px;
+}
+
+.contact-info a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: #f6f4f0; /* your accent color */
+  transition: width 0.3s ease-in-out;
+}
+
+.contact-info a:hover::after {
+  width: 100%;
+}
+
+
+.email-emphasize {
+	font-weight: 600;
+}
+
+.timeline-section-titles {
+	color: #f6f4f0;
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+.job, .edu, .service {
+	background-color: #f6f4f0;
+	border-radius: 5px;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+.job-title, .edu-title, .service-title {
+	color: #213f9a;
+	font-size: 1em
+}
+
+.job-company, .edu-school, .service-org {
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: 300;
+	margin: 0.5em 0em;
+}
+
+.job-date, .edu-date, .service-date {
+	font-size: 0.9em;
+	font-weight: 600;
+	color: #213f9a;
+}
+
+.job-details li, .edu-details li, .service-details li {
+	font-family: Poppins;
+	font-size: 0.8em;
+	font-weight: 300;
+	color: black;
+	margin: 0.2em 0em;
+	/*max-width: 45em;*/
+}
+
+.resume-download {
+    text-align: center;
+    margin: 4em 0 3em;
+}
+
+.download-btn {
+    background: #f6f4f0;
+	font-family: "Special Gothic Expanded One";
+    color: #213f9a;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #dcd6cd;
+}
+
+/* inquiries page styles */
+.connect-section {
+	/*border: 1px solid black;*/
+	position: relative;
+	background-image: url("../images/portfolio background.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 650px;
+	padding: 3em;
+	display: flex;
+}
+
+.connect-title-container {
+	border: 1px solid transparent;
+	display: flex;
+	column-gap: 3em;
+	margin-bottom: 3em;
+}
+
+.connect-title {
+	color: #f6f4f0;
+	font-size: 5em;
+}
+
+.center-container {
+	border: 1px solid transparent;
+	margin: auto;
+	width: 57em;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+.contact-info-container {
+	border: 1px solid transparent;
+	padding: 0em;
+	display: flex;
+	width: auto;
+	justify-content: space-between;
+}
+
+.connect-subtitle-container {
+	border: 1px solid transparent;
+	width: 47%;
+}
+
+.connect-subtitle {
+	font-size: 0.9em;
+	color: #f6f4f0;
+	font-weight: 200;
+}
+
+.connect-container {
+	border: 1px solid transparent;
+	display: flex;
+	justify-content: space-between;
+	column-gap: 10em;
+	
+}
+
+.column {
+	border: 1px solid transparent;
+	display: flex;
+	flex-direction: column;
+	gap: 8em;
+}
+
+.info {
+	border: 1px solid transparent;
+	display: flex;
+	flex-direction: column;
+	gap: 0.3em
+}
+
+.connect-info a {
+	position: relative;
+	padding-bottom: 3px; /* adds space for the line */
+	text-decoration: none;
+	color: #f6f4f0;
+}
+
+.connect-info a::after {
+	content: "";
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 height: 1.5px;
+	 width: 0;
+	 background-color: #f6f4f0; /* your accent color */
+	 transition: width 0.3s ease-in-out;
+}
+
+.info a:hover::after {
+  width: 100%;
+}
+
+.connect-info-title {
+	font-size: 1em;
+	margin: 0;
+	color: #f6f4f0;
+}
+
+.connect-info {
+	font-size: 1em;
+	font-weight: 200;
+	margin: 0em;
+	color: #f6f4f0;
+}
+
+/* footer styles */
+footer {
+	background-color: #213f9a; /* #21120A  #562b00*/
+	align-content: space-around;
+	height: 450px;
+	width: 100%;
+}
+
+.footerContainer {
+	border: 1px solid transparent;
+	width: 90%;
+	height: 300px;
+	margin: auto;
+	color: #f6f4f0;
+	margin-bottom: 3em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-logo-container {
+	border: 1px solid transparent;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	width: fit-content;
+	height: 120px;
+}
+
+.navContainer, .footerPersonal, .socialsContainer {
+	border: 1px solid transparent;
+	height: 120px;
+}
+
+.languageContainer{
+	border: 1px solid transparent;
+	width: 7em;
+	display: flex;
+	justify-content: space-between;
+}
+
+.copyrightContainer {
+	border: 1px solid transparent;
+	width: 90%;
+	margin: auto;
+	margin-bottom: -1em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+.footer-logo {
+	font-size: 2em;
+	color: #f6f4f0;
+	margin: 0;
+}
+
+.footerNav {
+	font-family: poppins;
+	font-size: 0.8em;
+	font-weight: 300;
+	list-style: none;
+	margin-top: 0.2em;
+	padding-left: 0;
+}
+
+.footerNav a {
+	position: relative;
+	text-decoration: none;
+	color: #f6f4f0; /* #F5EDDC Light Beige */
+	border: 0.04em solid transparent; /* avoids nav shifting */
+	padding: 0.3em 0em;
+	display: inline-block; /* cont. nav on dif line */
+	padding-bottom: 2px; /* adds space for the line */
+}
+
+.footerNav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1.2px;
+  width: 0;
+  background-color: #f6f4f0; /* your accent color */
+  transition: width 0.3s ease-in-out;
+}
+
+.footerNav a:hover::after {
+  width: 100%;
+}
+
+.footerTitles {
+	font-weight: 700;
+	font-size: 0.8em;
+	color: #f6f4f0;
+	margin: 0;
+}
+
+.footerInfo {
+	font-family: poppins;
+	font-weight: 300;
+	font-size: 0.8em;
+	margin: 0.4em 0;
+}
+
+.footerInfo2 {
+	font-weight: 300;
+	font-size: 0.8em;
+	margin: 0.4em 0 3em;
+}
+
+.footerInfo2 a {
+	text-decoration: none;
+	position: relative;
+	color: #f6f4f0; 
+	padding-bottom: 3px;
+}
+
+.footerInfo2 a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: #f6f4f0; /* your accent color */
+  transition: width 0.3s ease-in-out;
+}
+
+.footerInfo2 a:hover::after {
+  width: 100%;
+}
+
+
+.copyright {
+	font-family: "Special Gothic Expanded One";
+	font-size: 0.8em;
+	font-style: italic;
+	margin: 0;
+	color: #f6f4f0;
+}
+
+/* media query for 768px, ipad size */
+@media (max-width:768px) {
+	/* header styles */
+	.logo-container {
+		margin-left: 1.5em;
+	}
+	
+	.language-switcher {
+		margin-left: 0.3em;
+		margin-right: 1em;
+	}
+	
+	/* Show the hamburger menu button */
+    .menu-toggle {
+		border: 1px solid transparent;
+        display: block;
+		color:  #213f9a;
+    }
+	
+	.flex-nav {
+		font-size: 0.8em;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 33px;
+        right: 0em;
+        width: 100%;
+        background: #213f9a; /* #F5EDDC Match site color */
+        padding: 15px 0;
+        text-align: center;
+    }
+	
+	.flex-nav a {
+		color: #f6f4f0;
+	}
+	
+	.flex-nav a::after {
+ 		 background-color: #f6f4f0; /* your accent color */
+	}
+
+	.flex-nav a.active {
+		color: #f6f4f0;
+	}
+	
+	 /* Show menu when active */
+    .flex-nav.active {
+        display: flex;
+    }
+	
+/* intro page */
+	/* intro section syles */
+	.intro-section {
+		height: 570px;
+	}
+	
+	.title-container {
+		margin-top: 13.4em;
+	}
+	
+	.intro-title {
+		font-size: 4em;
+		margin: 0;
+	}
+	
+	#subheadline {
+		font-size: 1em;
+	}
+
+	#name{
+		font-size: 1.5em;
+	}
+	
+	/* about section styles */
+	.about-section {
+		background-image: url("../../portfolio background.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 570px;
+		padding: 3em;
+	}
+	
+	.written-title {
+		font-size: 2.5em;
+	}
+
+	.bold-title {
+		font-size: 2.3em;
+	}
+	
+	.intro-title-container {
+		width: 6em;
+		margin-left: 11em
+	}
+	
+	#name-title, #edu-title, #bio-title {
+		font-size: 0.8em;
+	}
+	
+	.name {
+		font-size: 1.2em;
+	}
+	
+	#school {
+		font-size: 0.8em;
+	}
+
+	#major {
+		font-size: 0.7em;
+	}
+
+	#bio-story {
+		font-size: 0.6em;
+		max-width: 36em;
+	}
+
+	/* work section styles */
+	.works-section {
+		height: fit-content;
+	}
+
+	#work-title {
+		column-gap: 1.5em;
+	}
+
+	.work {
+		font-size: 2.3em;
+		margin: 0;
+	}
+	
+	.grid-container {
+		grid-template-columns: 1fr 1fr;
+		gap: 3em;
+		width: fit-content;
+	}
+	
+	.image-button {
+	  background: none;/* Remove default button background */
+	  border: none;/* Remove default button border */
+	  padding: 0;/* Remove default padding */
+	  cursor: pointer;/* Make the button behave like a clickable element */
+		display: inline-block;
+		 margin-bottom: 15px;
+	}
+	
+	.project-name {
+		font-size: 0.8em;
+	}
+
+	.number {
+		font-size: 1.9em
+	}
+	
+/* compositions page*/
+	/* composition section styles */
+	.compositions-section {
+		padding: 2em 4em;
+		margin-bottom: 0em;
+	}
+
+	/* composition title styles */
+	.compositions-title {
+		font-size: 2.5em;
+	}
+
+	.compositions-sub-container {
+		width: 95%;
+	}
+
+	.compositions-subtitle {
+		font-size: 0.8em;
+		font-weight: 300;
+	}
+	
+	/* composition filter styles */
+	.nav-filter-container {
+		margin: 1em 0em;
+	}
+
+	.filter-title {
+		font-size: 1.3em;
+	}
+
+	.composition-filters {
+		gap: 1.9em;
+		padding-left: 0.5em;
+	}
+
+	.composition-filters a {
+		font-size: 0.6em;
+	}
+
+	/* composition gallery syles */
+	.composition-gallery {
+		border: 1px solid transparent;
+		column-count: 2;
+		column-gap: 15px;
+		width: 100%;
+	}
+	
+/* timeline page */
+	/* timeline section styles */
+	.timeline-section {
+		padding: 2em 3.5em 5em;
+	}
+	
+	.personal-info {
+		margin-bottom: 2em
+	}
+
+	#timeline-name {
+		font-size: 1.7em;
+	}
+
+	.contact-info {
+		font-size: 0.8em;
+	}
+	
+	.timeline-section-titles {
+		font-size: 1.6em;
+	}
+
+	.job-title, .edu-title, .service-title {
+		font-size: 0.8em
+	}
+
+	.job-company, .edu-school, .service-org {
+		font-size: 0.8em;
+		margin: 0.2em 0em;
+	}
+
+	.job-date, .edu-date, .service-date {
+		font-size: 0.8em;
+	}
+
+	.resume-download {
+		text-align: center;
+		margin: 3em 0 2em;
+	}
+
+	.download-btn {
+		font-size: 0.8em;
+	}
+
+
+	/* footer styles */
+	.footer-logo-container {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 0em;
+	}
+	
+	.footer-logo {
+		font-size: 1.1em;
+	}
+	
+	.footerNav {
+		font-size: 0.6em;
+		margin-top: 0.2em;
+	}
+	
+	.footerTitles {
+		font-size: 0.6em;
+	}
+
+	.footerInfo {
+		font-size: 0.6em;
+		margin: 0.4em 0;
+	}
+	
+	.footerInfo2 {
+		font-size: 0.6em;
+		margin: 0.4em 0 10em;
+	}
+
+
+	.footerNav a {
+		padding: 0.3em 0em;
+		padding-bottom: 2px; /* adds space for the line */
+	}
+
+	.copyright {
+		font-size: 0.6em;
+	}
+}
+
+
+
+
+
+
+
+
